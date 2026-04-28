@@ -1,84 +1,53 @@
 # Messages Feature Automation (Playwright + TypeScript)
+# Messages Feature – Test Plan
 
-## 📌 Overview
+## 🎯 Scope
 
-This project contains automated test cases for the Messages feature of the Actimo platform, covering core flows such as message creation, publishing, validation, and analytics.
-
----
-
-## ⚙️ Setup Instructions
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/your-username/actimo-tests.git
-cd actimo-tests
-```
-
-### 2. Install dependencies
-
-```bash
-npm install
-```
-
-### 3. Install Playwright browsers
-
-```bash
-npx playwright install
-```
+Covers message creation, content modules, publishing, notifications, and analytics.
 
 ---
 
-## ▶️ Run Tests
+## 🔴 Critical Priority
 
-### Run all tests
-
-```bash
-npx playwright test
-```
-
-### Run specific test file
-
-```bash
-npx playwright test tests/message.e2e.spec.ts
-```
-
-### Run in headed mode (see browser)
-
-```bash
-npx playwright test --headed
-```
+| Scenario              | Priority | Rationale                |
+| --------------------- | -------- | ------------------------ |
+| Create New Message    | Critical | Core entry point         |
+| Add Content Modules   | Critical | Message requires content |
+| Assign Recipients     | Critical | Needed for delivery      |
+| Publish Message       | Critical | Core action              |
+| Notification Delivery | Critical | Business value           |
+| End-to-End Flow       | Critical | Validates full system    |
 
 ---
 
-## 📊 Test Coverage
+## 🟠 High Priority
 
-Automated scenarios include:
-
-* End-to-End message creation → publish flow
-* Publish validation (no recipients)
-* Analytics visibility after publish
-
----
-
-## 📁 Project Structure
-
-```
-.
-├── pages/              # Page Object Models
-├── tests/              # Test specs
-├── docs/               # Test Plan & documentation
-├── playwright.config.ts
-├── package.json
-└── README.md
-```
+| Scenario            | Priority | Rationale           |
+| ------------------- | -------- | ------------------- |
+| Module Rendering    | High     | Prevent UI mismatch |
+| Edit Message        | High     | Common user flow    |
+| Scheduling          | High     | Time-based logic    |
+| Validation Handling | High     | Prevent bad data    |
+| Analytics Update    | High     | Business metrics    |
 
 ---
 
-## 🧠 Notes
+## 🟡 Medium Priority
 
-* Tests are written using Playwright Test Runner
-* Page Object Model (POM) design pattern is used
-* Focus is on high-priority, business-critical flows
+| Scenario          | Priority | Rationale  |
+| ----------------- | -------- | ---------- |
+| Drag & Drop UI    | Medium   | Usability  |
+| Social Features   | Medium   | Engagement |
+| Analytics Filters | Medium   | Reporting  |
+
+---
+
+## 🟢 Low Priority
+
+| Scenario          | Priority | Rationale  |
+| ----------------- | -------- | ---------- |
+| UI Responsiveness | Low      | Visual     |
+| Error Messages    | Low      | UX         |
+| Performance       | Low      | Edge cases |
 
 ---
