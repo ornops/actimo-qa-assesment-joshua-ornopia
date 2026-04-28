@@ -1,0 +1,23 @@
+{
+  "name": "actimo-qa-assesment-joshua-ornopia",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ornops/actimo-qa-assesment-joshua-ornopia.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ornops/actimo-qa-assesment-joshua-ornopia/issues"
+  },
+  "homepage": "https://github.com/ornops/actimo-qa-assesment-joshua-ornopia#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.59.1",
+    "@types/node": "^25.6.0"
+  }
+}
